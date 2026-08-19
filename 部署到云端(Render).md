@@ -39,7 +39,7 @@ git push -u origin main
    | 变量 | 值 |
    |---|---|
    | `FEISHU_APP_ID` | `cli_aa0fbbb08938dbd5` |
-   | `FEISHU_APP_SECRET` | `qstY7O4C8SX2NnFEypp8je5ZLvRhPn6D` |
+   | `FEISHU_APP_SECRET` | `<你的飞书 App Secret，取自本地 .env>` |
    | `FEISHU_VERIFICATION_TOKEN` | （留空） |
    | `PORT` | `3000` |
    | `CALLBACK_PATH` | `/feishu/event` |
