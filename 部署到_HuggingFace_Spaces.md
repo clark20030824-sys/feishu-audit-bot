@@ -1,4 +1,9 @@
-# 部署到 Hugging Face Spaces（免费 · 免信用卡）
+# 部署到 Hugging Face Spaces（⚠️ 已失效，保留备档）
+
+> **2026-07 起，Hugging Face 把 Docker / Gradio Spaces 改为必须 PRO 付费**，免费层只剩静态页面。
+> 本项目改选 **Glitch**（免费 + 免卡），见 `部署到_Glitch.md`。本文件仅作历史备档。
+>
+> 安全提示：下方环境变量中的 `FEISHU_APP_SECRET` 与 `LLM_API_KEY` 已改为占位符，**请勿把真实密钥提交到公开仓库**。
 
 适用：飞书审核机器人后台（`index.js` + Express）。
 HF Spaces 免费版**不需要信用卡**，给固定 HTTPS 公网 URL，飞书事件回调可直接用。
@@ -27,11 +32,11 @@ HF Spaces 免费版**不需要信用卡**，给固定 HTTPS 公网 URL，飞书�
 | 名称 | 值 |
 |---|---|
 | `FEISHU_APP_ID` | `cli_aa0fbbb08938dbd5` |
-| `FEISHU_APP_SECRET` | `qstY7O4C8SX2NnFEypp8je5ZLvRhPn6D` |
+| `FEISHU_APP_SECRET` | `<你的飞书 App Secret，取自本地 .env>` |
 | `FEISHU_VERIFICATION_TOKEN` | （留空） |
 | `CALLBACK_PATH` | `/feishu/event` |
 | `LLM_API_BASE` | `https://api.siliconflow.cn/v1` |
-| `LLM_API_KEY` | `sk-jofxgumskqibgsxyncvlxasrrofbxhxyiwwnucgmzcoyzdte` |
+| `LLM_API_KEY` | `<你的 SiliconFlow API Key，取自本地 .env>` |
 | `LLM_MODEL` | `Qwen/Qwen2.5-7B-Instruct` |
 | `AUDITOR_OPEN_ID` | `ou_ffa741dd83eb41ea4da3adaefd9a6bc8` |
 | `PORT` | 不填（HF 自己注入 7860） |
